@@ -312,7 +312,7 @@ ul {
 
 .skills-fun-facts {
     max-width: 1090px;
-    gap: 135px;
+    /* gap: 135px; */
 }
 
 .skills {
