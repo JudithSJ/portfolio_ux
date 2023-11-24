@@ -1,0 +1,521 @@
+/* colors
+#000036 dark blue
+#98C1D9 light blue */
+body {
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #000036;
+}
+
+a:hover {
+    /* text-decoration: underline; */
+    color: #98C1D9;
+}
+
+i {
+    padding: 0px 8px;
+    line-height: 0;
+}
+
+.navSpace {
+    height: 80px
+}
+
+.homeBody {
+    height: 80px;
+    padding: 0px;
+    margin: 0px;
+    color: #000036;
+}
+
+.flex {
+    display: flex
+}
+
+.navBar {
+    position: fixed;
+    z-index: 10;
+    width: calc(100% - 96px);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 48px 0px 48px;
+    border-bottom-style: outset;
+    border-color: #000036;
+    background-color: white;
+}
+
+.navLinks {
+    width: 580px;
+    justify-content: space-between;
+}
+
+.navButton {
+    color: #000036;
+}
+
+.navButton:hover {
+    color: #98C1D9;
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.main-area {
+    padding: 0px 48px 0px 48px;
+}
+
+.hero {
+    height: 640px;
+    padding: 0px 162px 0px 162px;
+    align-items: center;
+}
+
+/* .hero-text-box {} */
+
+h1 {
+    font-size: 64px;
+    font-weight: 400;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hello {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 3px solid #98C1D9;
+    animation: typing 5s forwards, blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: fit-content
+    }
+}
+
+/* 
+.kamusta {
+    animation-duration: 1s;
+}
+
+
+.hola {
+    animation-duration: 1s;
+    animation-delay: 3s;
+
+}
+
+.animate__fadeOut {
+    animation-delay: 9s;
+} */
+
+.main-projects-section {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 160px;
+}
+
+.main-project {
+    width: 1116px;
+}
+
+.other-projects-text {
+    justify-content: center;
+    padding: 80px;
+}
+
+.project-image {
+    height: 640px;
+    width: 1116px;
+}
+
+.project-title {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 8px;
+}
+
+.project-title-text {
+    color: #000036;
+}
+
+.project-title-text:hover {
+    color: #000036;
+    text-decoration-color: #000036;
+}
+
+.project-title-desc {
+    color: #98C1D9;
+}
+
+.project-title-desc:hover {
+    color: #98C1D9;
+    text-decoration-color: #98C1D9
+}
+
+.secondary-project-section {
+    overflow-x: scroll;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 160px;
+}
+
+.secondary-project-section::-webkit-scrollbar {
+    display: none;
+}
+
+.secondary-project {
+    width: 576px;
+    margin-right: 80px;
+}
+
+.project-image-small {
+    height: 386px;
+    width: 576px;
+}
+
+.cory-fit {
+    background-image: url(../images/main-projects/Hero\ Image-Cory.png);
+    background-size: cover;
+    filter: opacity(50%);
+    transition: 0.3s;
+}
+
+.cory-fit:hover {
+    filter: opacity(100%);
+}
+
+.edvanza-part-1 {
+    background-image: url(../images/main-projects/Hero\ Image-Edvanza\ 1.png);
+    background-size: cover;
+    filter: opacity(50%);
+    transition: 0.3s;
+}
+
+.edvanza-part-1:hover {
+    filter: opacity(100%);
+}
+
+.edvanza-part-2 {
+    background-image: url(../images/main-projects/Hero\ Image-Edvanza\ 2.png);
+    background-size: cover;
+    filter: opacity(50%);
+    transition: 0.3s;
+}
+
+.edvanza-part-2:hover {
+    filter: opacity(100%);
+}
+
+.abigail-farm {
+    background-image: url(../images/secondary-projects/AFSI_Cover.png);
+    background-size: cover;
+    filter: opacity(50%);
+    transition: 0.3s;
+}
+
+.abigail-farm:hover {
+    filter: opacity(100%);
+}
+
+.virtuwa-business {
+    background-image: url(../images/secondary-projects/Virtuwa_01_Cover.jpeg);
+    background-size: cover;
+    filter: opacity(50%);
+    transition: 0.3s;
+}
+
+.virtuwa-business:hover {
+    filter: opacity(100%);
+}
+
+.hearing-health {
+    background-image: url(../images/secondary-projects/Hearing\ Health\ Hub_Cover.png);
+    background-size: cover;
+    filter: opacity(50%);
+    transition: 0.3s;
+}
+
+.hearing-health:hover {
+    filter: opacity(100%);
+}
+
+.rocky-balboa {
+    background-image: url(../images/secondary-projects/Rocky\ Balboa_Cover.png);
+    background-size: cover;
+    filter: opacity(50%);
+    transition: 0.3s;
+}
+
+.rocky-balboa:hover {
+    filter: opacity(100%);
+}
+
+.olympic-swimming {
+    background-image: url(../images/secondary-projects/Olympic\ Swimming_01_Cover.png);
+    background-size: cover;
+    filter: opacity(50%);
+    transition: 0.3s;
+}
+
+.olympic-swimming:hover {
+    filter: opacity(100%);
+}
+
+.footer {
+    align-items: center;
+    border-top-style: outset;
+    border-color: #000036;
+    padding: 80px 48px;
+}
+
+.aboutBody {
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 48px;
+    margin: 0px;
+    color: #000036;
+}
+
+.hero-image {
+    background-image: url(../images/about-me/Hero_Judith\ San\ Juan.jpg);
+    background-size: cover;
+    height: 640px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero-image:hover {
+    background-image: url(../images/about-me/Hero_Judith\ San\ Juan_Hover.jpg)
+}
+
+.skills-fun-facts {
+    max-width: 1090px;
+    gap: 135px;
+}
+
+.skills {
+    width: 60%;
+}
+
+.skills-list {
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.skill-entry {
+    padding: 8px 16px;
+    border-style: outset;
+    border-color: #000036;
+    border-radius: 4px;
+    background-color: #EEF8F8;
+}
+
+.fun-facts {
+    flex-direction: column;
+    width: 40%;
+    gap: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.fun-fact-1 {
+    flex-direction: row;
+    height: 64px;
+}
+
+
+.fun-fact-1-active {
+    position: static;
+    object-fit: contain;
+    opacity: 100%;
+}
+
+.fun-fact-1-hover {
+    position: relative;
+    right: 133px;
+    object-fit: contain;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.fun-fact-1-hover:hover {
+    position: relative;
+    right: 133px;
+    object-fit: contain;
+    opacity: 100%;
+}
+
+.fun-fact-2 {
+    flex-direction: row;
+    height: 64px;
+}
+
+
+.fun-fact-2-active {
+    position: static;
+    object-fit: contain;
+    opacity: 100%;
+}
+
+.fun-fact-2-hover {
+    position: relative;
+    right: 132px;
+    object-fit: contain;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.fun-fact-2-hover:hover {
+    position: relative;
+    right: 132px;
+    object-fit: contain;
+    opacity: 100%;
+}
+
+.fun-fact-3 {
+    flex-direction: row;
+    height: 64px;
+}
+
+
+.fun-fact-3-active {
+    position: static;
+    object-fit: contain;
+    opacity: 100%;
+}
+
+.fun-fact-3-hover {
+    position: relative;
+    right: 132px;
+    object-fit: contain;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.fun-fact-3-hover:hover {
+    position: relative;
+    right: 132px;
+    object-fit: contain;
+    opacity: 100%;
+}
+
+.my-story {
+    max-width: 1090px;
+    padding: 40px 0px;
+}
+
+.work-education {
+    width: 1090px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px 0px;
+}
+
+p {
+    max-width: 520px;
+    margin-bottom: 40px;
+}
+
+.interactive-map {
+    position: relative;
+    justify-content: center;
+    height: 440px;
+}
+
+.interactive-map-active {
+    position: absolute;
+    left: 0;
+    object-fit: contain;
+    opacity: 100%;
+    width: 943px;
+    max-height: 440px;
+}
+
+.interactive-map-hover {
+    position: absolute;
+    left: 0;
+    object-fit: contain;
+    opacity: 0%;
+    width: 943px;
+    max-height: 440px;
+    transition: 0.3s;
+}
+
+.interactive-map-hover:hover {
+    opacity: 100%;
+    max-height: 440px;
+}
+
+.venn-diagram {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 1090px;
+    height: 480px;
+}
+
+.venn-diagram-active {
+    position: absolute;
+    left: 0;
+    object-fit: contain;
+    height: 480px;
+}
+
+.venn-diagram-hover {
+    position: absolute;
+    left: 0;
+    object-fit: contain;
+    height: 480px;
+    opacity: 0%;
+    transition: 0.3s;
+}
+
+.venn-diagram-hover:hover {
+    object-fit: contain;
+    height: 480px;
+    opacity: 100%;
+}
+
+.my-story-section {
+    padding: 40px 0px;
+}
+
+.timeline {
+    object-fit: contain;
+}
+
+.timeline-image {
+    width: 500px;
+}
+
+.case-study-area {
+    padding-top: 72px;
+    width: 1vw;
+    object-fit: contain;
+    margin: 0;
+}
